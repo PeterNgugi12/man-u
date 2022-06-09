@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+        <a href="#"><img src="/images/vector-logotype-manchester-sign-logo-260nw-1301879431.webp" class="logo"></a>
+        <ul class="navigation">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Players</li>
+            <li><a href="#"></a>Contact</li>
+        </ul>
+            
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>The UEFA Championship League</h2>
+                <p>One of the most popular soccer teams in the world,
+                     the iconic Manchester United Football Club was formed in 1878 and rechristened to
+                      its present name in 1902. The club is lovingly called Red Devils by its ardent supports. 
+                      The home ground of the team is Old Trafford.</p>
+                      <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/images/images (9).jpeg"></div>
+                        <div class="swiper-slide"><img src="/images/Manchester-United-emblem.png"></div>
+                        <div class="swiper-slide"><img src="/images/images (5).jpeg"></div>
+
+                    </div>
+                </div>
+            
+
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop: true
+        });
+      </script>
+</body>
+</html>
